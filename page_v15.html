@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <?!= include('page-css') ?>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="fname" type="text" class="validate">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="lname" type="text" class="validate">
+          <label for="lname">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s8">
+          <select id="opt">
+                    <option value="" disabled selected>Choose your option</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+          <label>Option</label>
+        </div>
+      </div>
+    </div>
+
+    <div class='form-row'>
+      <button id="btn">Run It!</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <?!= include('page-js') ?>
+  </body>
+</html>
