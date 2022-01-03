@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <?!= include('page-css') ?>
+  </head>
+  <body>
+    <h1>Hello 2</h1>
+    <div class='form-row'>
+      <label>First Name:</label><input type="text" id="fname">
+    </div>
+    <div class='form-row'>
+      <label>Last Name:</label><input type="text" id="lname">
+    </div>
+    <div class='form-row'>
+      <label>Option:</label>
+      <select id="opt">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+    </div>
+    <div class='form-row'>
+      <button id="btn">Run It!</button>
+    </div>
+    <?!= include('page-js') ?>
+  </body>
+</html>
