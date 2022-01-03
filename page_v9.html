@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      .form-row {
+        margin-bottom:15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <div class='form-row'>
+      <label>First Name:</label><input type="text" id="fname">
+    </div>
+    <div class='form-row'>
+      <label>Last Name:</label><input type="text" id="lname">
+    </div>
+    <div class='form-row'>
+      <label>Option:</label>
+      <select id="opt">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+    </div>
+    <div class='form-row'>
+      <button id="btn">Run It!</button>
+    </div>
+    <script>
+      document.getElementById("btn").addEventListener("click", myFunction);
+
+      function myFunction() {
+        var userInfo = {};
+        userInfo.firstname = document.getElementById("fname").value;
+        userInfo.lastname = document.getElementById("lname").value;
+        userInfo.option = document.getElementById("opt").value;
+        google.script.run.userClicked(userInfo);
+        document.getElementById("fname").value = '';
+        document.getElementById("lname").value = '';
+        document.getElementById("opt").value = '';
+      }
+    </script>
+  </body>
+</html>
