@@ -1,0 +1,19 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+  });
+  
+  document.getElementById("btn").addEventListener("click", myFunction);
+
+  function myFunction() {
+    var userInfo = {};
+    userInfo.firstname = document.getElementById("fname").value;
+    userInfo.lastname = document.getElementById("lname").value;
+    userInfo.option = document.getElementById("opt").value;
+    google.script.run.userClicked(userInfo);
+    document.getElementById("fname").value = '';
+    document.getElementById("lname").value = '';
+    document.getElementById("opt").value = '';
+  }
+</script>
