@@ -1,0 +1,44 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var selectBoxes = document.querySelectorAll('select');
+    M.FormSelect.init(selectBoxes);
+    var datePicker = document.querySelectorAll('.datepicker');
+    M.Datepicker.init(datePicker);
+  });
+  
+  document.getElementById("btn").addEventListener("click", myFunction);
+  document.getElementById("pc").addEventListener("input", getEstimate);
+
+  function myFunction() {
+    var userInfo = {};
+    userInfo.firstname = document.getElementById("fname").value;
+    userInfo.lastname = document.getElementById("lname").value;
+    userInfo.option = document.getElementById("opt").value;
+    userInfo.pc = document.getElementById("pc").value;
+    userInfo.est = document.getElementById("est").value;
+
+    google.script.run.userClicked(userInfo);
+    
+    document.getElementById("fname").value = '';
+    document.getElementById("lname").value = '';
+    document.getElementById("pc").value = '';
+    document.getElementById("est").value = '';
+    M.updateTextFields();
+    var myOption = document.getElementById("opt");
+    myOption.value = "";
+    M.FormSelect.init(myOption);
+  }
+
+  function getEstimate() {
+    var postalCode = document.getElementById('pc').value;
+    if (postalCode.length === 5) {
+      google.script.run.withSuccessHandler(updateEstimate).getCost(postalCode);
+    }
+  }
+
+  function updateEstimate(cost) {
+    document.getElementById('est').value = cost;
+    M.updateTextFields();
+  }
+
+</script>
