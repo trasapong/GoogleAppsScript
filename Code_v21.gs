@@ -16,7 +16,8 @@ function doGet(e) {
 
 function getCalendarBusyDays() {
   var startDate = new Date();
-  var endDate = new Date(new Date().setYear(startDate.getFullYear()+1));
+  var endDate = new Date();
+  endDate.setYear(startDate.getFullYear()+1));
 
   var calendar = CalendarApp.getCalendarById('oub547rh4dc6db2oevjqo4t8d0@group.calendar.google.com');
   var events = calendar.getEvents(startDate, endDate);
