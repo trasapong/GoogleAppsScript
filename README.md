@@ -99,3 +99,31 @@
 
 - Re-initializa Matetialize select
 
+### page_v18.html  
+
+- Set page title from variable
+
+### Code_v10.gs
+
+- Send a parameter from Code.gs
+
+### page_v19.html  
+
+- Set page title from a parameter sent from Code.gs 
+
+### Code_v11.gs
+
+- Send a list from Code.gs
+
+### page_v20.html  
+
+- Use items in a list sent from Code.gs as options in select 
+
+### Code_v12.gs
+
+- Read select options from sheet (sheetname = 'Options')
+
+### Code_v13.gs
+
+- Create htmlListArray 
+
