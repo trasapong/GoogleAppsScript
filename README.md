@@ -127,3 +127,82 @@
 
 - Create htmlListArray 
 
+### page_v21.html  
+
+- Update how to populate options in select
+
+### page_v22.html  
+
+- Add textinputs for postal code and (shipping cost) estimate
+
+### page-js_v04.html 
+
+- Create getEstimate() function to just copy content from postalCode textinput to estimate textinput
+
+### page-js_v05.html 
+
+- Fix overlapping textinput
+
+### page-js_v06.html 
+
+- Call only when 5 char long
+
+### Code_v14.gs/page-js_v07.html
+
+- Link info from sheet
+
+### Code_v15.gs
+
+- Add '$' in front and set 2 decimal places
+
+### page-js_v08.html 
+
+- Update myFunction() for postalCode and estimate (get values and clear values)
+
+### Code_v16.gs
+
+- Update appending postalCode and estimate 
+
+### page-js_v09.html 
+
+- Add M.updateTextFields() to reset the behavior of the textinput
+
+### page_v23.html  
+
+- Add datepicker
+
+### page-js_v10.html 
+
+- Initialize datepicker
+
+### page-js_v11.html - page-js_v12.html
+
+- Disable some days
+
+### Code_v17.gs - Code_v20.gs
+
+- Connect to calendar
+- Add getCalenlarBusyDays() function
+
+### page-js_v13.html 
+
+- Call getCalendarBusyDays() from .html
+- Populate datepicker
+
+### Code_v21.gs
+
+- To be more dynamic, add startDate and endDate for getEvents()
+
+### page-js_v14.html 
+
+- Disable all before today
+
+### page-js_v15.html 
+
+- Update myFunction() to get and clear prefDate value
+
+### Code_v22.gs
+
+- Update appending selected date from datepicker 
+
+--------
