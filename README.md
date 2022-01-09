@@ -10,7 +10,7 @@
 
 ### Code_v02.gs
 
-- Logger.log()
+- `Logger.log()`
 - Interact with user
 
 ### page_v02.html
@@ -19,7 +19,7 @@
 
 ### Code_v03.gs
 
-- Add userClicked() function
+- Add `userClicked()` function
 
 ### page_v03.html
 
@@ -40,7 +40,7 @@
 
 ### page_v06.html
 
-- Clear previous info in the text input
+- Clear previous info in the textinput
 
 ### Code_v05.gs
 
@@ -137,7 +137,7 @@
 
 ### page-js_v04.html 
 
-- Create getEstimate() function to just copy content from postalCode textinput to estimate textinput
+- Create `getEstimate()` function to just copy content from postalCode textinput to estimate textinput
 
 ### page-js_v05.html 
 
@@ -157,7 +157,7 @@
 
 ### page-js_v08.html 
 
-- Update myFunction() for postalCode and estimate (get values and clear values)
+- Update `myFunction()` for postalCode and estimate (get values and clear values)
 
 ### Code_v16.gs
 
@@ -165,7 +165,7 @@
 
 ### page-js_v09.html 
 
-- Add M.updateTextFields() to reset the behavior of the textinput
+- Add `M.updateTextFields()` to reset the behavior of the textinput
 
 ### page_v23.html  
 
@@ -182,16 +182,16 @@
 ### Code_v17.gs - Code_v20.gs
 
 - Connect to calendar
-- Add getCalenlarBusyDays() function
+- Add `getCalenlarBusyDays()` function
 
 ### page-js_v13.html 
 
-- Call getCalendarBusyDays() from .html
+- Call `getCalendarBusyDays()` from .html
 - Populate datepicker
 
 ### Code_v21.gs
 
-- To be more dynamic, add startDate and endDate for getEvents()
+- To be more dynamic, add startDate and endDate for `getEvents()`
 
 ### page-js_v14.html 
 
@@ -199,7 +199,7 @@
 
 ### page-js_v15.html 
 
-- Update myFunction() to get and clear prefDate value
+- Update `myFunction()` to get and clear prefDate value
 
 ### Code_v22.gs
 
