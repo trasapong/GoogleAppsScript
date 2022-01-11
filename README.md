@@ -24,7 +24,7 @@
 ### page_v03.html
 
 - Add button listener
-- Add Google script calling from .html
+- Add Google script calling from client-side
 
 ### page_v04.html
 
@@ -105,19 +105,19 @@
 
 ### Code_v10.gs
 
-- Send a parameter from Code.gs
+- Send a parameter from Code.gs (server-side)
 
 ### page_v19.html  
 
-- Set page title from a parameter sent from Code.gs 
+- Set page title from a parameter sent from Code.gs (server-side)
 
 ### Code_v11.gs
 
-- Send a list from Code.gs
+- Send a list from Code.gs (server-side)
 
 ### page_v20.html  
 
-- Use items in a list sent from Code.gs as options in select 
+- Use items in a list sent from Code.gs (server-side) as options in select 
 
 ### Code_v12.gs
 
@@ -186,7 +186,7 @@
 
 ### page-js_v13.html 
 
-- Call `getCalendarBusyDays()` from .html
+- Call `getCalendarBusyDays()` from client-side
 - Populate datepicker
 
 ### Code_v21.gs
