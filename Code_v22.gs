@@ -1,4 +1,4 @@
-var url = "https://docs.google.com/spreadsheets/d/1ybZdAjHePc6TmgZrZ3eU-YqXcR61WL6cHVqstJ1dPk4/edit#gid=0";
+var url = "YOUR_SHEET_URL";
 
 function doGet(e) {
   var ss = SpreadsheetApp.openByUrl(url);
@@ -19,7 +19,7 @@ function getCalendarBusyDays() {
   var endDate = new Date();
   endDate.setYear(startDate.getFullYear()+1);
 
-  var calendar = CalendarApp.getCalendarById('oub547rh4dc6db2oevjqo4t8d0@group.calendar.google.com');
+  var calendar = CalendarApp.getCalendarById('YOUR_CALENDAR_ID');
   var events = calendar.getEvents(startDate, endDate);
   var days = events.map(function(e) { return new Date(Utilities.formatDate(e.getStartTime(), calendar.getTimeZone(), "MM-dd-yyyy") + " GMT+7").valueOf() });
   
